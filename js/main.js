@@ -55,7 +55,7 @@ btn.addEventListener ("click", function (event){
       </tr>`
       contador++;
       counter.innerText = contador;
-      SpanTotal.innerText=" $ " + TotalFinal.toFixed(2); 
+      SpanTotal.innerHTML=`<strong>\$</strong> ${TotalFinal.toFixed(2)}`; 
       nom.value="";
       cant.value="";
       nom.classList.remove("is-invalid");
